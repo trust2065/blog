@@ -5,7 +5,7 @@ hugo server -D
 push new posts to github
 
 # visit
-https://trust2065.github.io/cursor_playground/posts/
+https://trust2065.github.io/blog/posts/
 
 # 私密文章 (Private Posts) 功能
 - **路徑**: 所有的私密文章請統一放在 `content/posts/private/` 目錄底下。
