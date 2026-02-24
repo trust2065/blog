@@ -56,6 +56,15 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Encrypt private posts
+        env:
+          PRIVATE_POST_PASSWORD: ${{ secrets.PRIVATE_POST_PASSWORD }}
+        run: |
+          if [ -n "$PRIVATE_POST_PASSWORD" ] && [ -d "public/private" ]; then
+            npx -y staticrypt "public/private/**/*.html" -p "$PRIVATE_POST_PASSWORD" --directory public/private --short
+          else
+            echo "Skipping encryption: No password or no private directory."
+          fi
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
