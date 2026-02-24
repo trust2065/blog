@@ -1,4 +1,4 @@
-baseURL = 'https://trust2065.github.io/cursor_playground/'
+baseURL = 'https://trust2065.github.io/blog/'
 languageCode = 'zh-tw'
 title = '澳洲0-3歲育兒指南'
 theme = 'ananke'
