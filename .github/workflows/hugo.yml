@@ -60,8 +60,12 @@ jobs:
         env:
           PRIVATE_POST_PASSWORD: ${{ secrets.PRIVATE_POST_PASSWORD }}
         run: |
-          if [ -n "$PRIVATE_POST_PASSWORD" ] && [ -d "public/private" ]; then
-            npx -y staticrypt "public/private/**/*.html" -p "$PRIVATE_POST_PASSWORD" --directory public/private --short
+          if [ -n "$PRIVATE_POST_PASSWORD" ] && [ -d "public/posts/private" ]; then
+            find public/posts/private -name "*.html" | while read file; do
+              base=$(basename "$file")
+              npx -y staticrypt "$file" -p "$PRIVATE_POST_PASSWORD" --short --remember true -d /tmp/encrypted_posts
+              cp "/tmp/encrypted_posts/$base" "$file"
+            done
           else
             echo "Skipping encryption: No password or no private directory."
           fi
