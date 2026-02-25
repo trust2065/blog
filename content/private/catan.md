@@ -1,5 +1,6 @@
 ---
 title: "Catan 筆記"
+date: 2025-05-06
 categories: ["private"]
 ---
 ![alt text](image.png)

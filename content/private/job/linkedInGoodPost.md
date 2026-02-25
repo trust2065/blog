@@ -1,5 +1,6 @@
 ---
 title: "linkedInGoodPost"
+date: 2025-06-09
 categories: ["private"]
 ---
 👋 Hey everyone!

@@ -1,3 +1,8 @@
+---
+title: "Assignment1 2"
+date: 2025-10-22
+---
+
 A serial module is an add-on to an LMS and can manage subscriptions to serials.
 The serial module provides:
 	•	Subscription management, including frequency adding/editing, which determines how often the library receives issues and how many issues the library gets.

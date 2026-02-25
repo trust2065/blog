@@ -1,5 +1,6 @@
 ---
 title: "catholicHealthCareSalary"
+date: 2025-09-12
 categories: ["private"]
 ---
 create a record system that records

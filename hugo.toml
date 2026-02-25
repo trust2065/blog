@@ -1,48 +1,75 @@
 baseURL = 'https://trust2065.github.io/blog/'
 languageCode = 'zh-tw'
-defaultContentLanguage = 'zh-tw'
 title = '澳洲0-3歲育兒指南'
-theme = 'ananke'
+theme = "PaperMod"
 
 hasCJKLanguage = true
-
 summaryLength = 50
+enableGitInfo = true
+
+[frontmatter]
+    date = ["date", ":filename", ":git", "publishDate"]
+    lastmod = ["lastmod", ":git", "date", "publishDate"]
+    publishDate = ["publishDate", ":filename", ":git", "date"]
+
+[outputs]
+    home = ["HTML", "RSS", "JSON"]
 
 [params]
-  description = '分享澳洲育兒經驗和建議'
-  favicon = ''
-  site_logo = ''
-  facebook = ''
-  twitter = ''
-  instagram = ''
-  youtube = ''
-  github = ''
-  gitlab = ''
-  linkedin = ''
-  mastodon = ''
+    env = "production"
+    title = "澳洲0-3歲育兒指南"
+    description = "分享澳洲育兒經驗和建議"
+    author = "Chocoli"
+    
+    # 核心外觀設定
+    defaultTheme = "auto" # dark, light, auto
+    disableThemeToggle = false
+    ShowReadingTime = true
+    ShowShareButtons = false
+    ShowPostNavLinks = true
+    ShowBreadCrumbs = true
+    ShowCodeCopyButtons = true
+    
+    # 首頁資訊
+    [params.homeInfoParams]
+        Title = "🇦🇺 澳洲0-3歲育兒指南"
+        Content = "這裡是分享澳洲育兒經驗、實用資訊與生活點滴的空間。希望這些內容能陪伴您與寶寶一起成長。"
+
+    [params.assets]
+        disableHLJS = false
 
 [menu]
-  [[menu.main]]
-    name = '首頁'
-    url = '/'
-    weight = 1
-  [[menu.main]]
-    name = '文章列表'
-    url = '/posts/'
-    weight = 2
-  [[menu.main]]
-    name = '分類'
-    url = '/categories/'
-    weight = 3
-  [[menu.main]]
-    name = '標籤'
-    url = '/tags/'
-    weight = 4
-  [[menu.main]]
-    name = '關於'
-    url = '/about/'
-    weight = 5
+    [[menu.main]]
+        identifier = "search"
+        name = "搜尋"
+        url = "/search/"
+        weight = 5
+    [[menu.main]]
+        identifier = "home"
+        name = "首頁"
+        url = "/"
+        weight = 10
+    [[menu.main]]
+        identifier = "posts"
+        name = "文章列表"
+        url = "/posts/"
+        weight = 20
+    [[menu.main]]
+        identifier = "categories"
+        name = "分類"
+        url = "/categories/"
+        weight = 30
+    [[menu.main]]
+        identifier = "tags"
+        name = "標籤"
+        url = "/tags/"
+        weight = 40
+
 
 [taxonomies]
-  category = 'categories'
-  tag = 'tags'
+    category = "categories"
+    tag = "tags"
+    series = "series"
+
+[markup.goldmark.renderer]
+    unsafe = true

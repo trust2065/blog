@@ -1,3 +1,8 @@
+---
+title: "Script_Unit1 2"
+date: 2025-10-27
+---
+
 Seeking feedback - not just reading the transcript
 Can use zoom to record and talk ppl online
 

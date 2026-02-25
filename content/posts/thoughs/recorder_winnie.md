@@ -1,3 +1,8 @@
+---
+title: "recorder_winnie"
+date: 2025-09-12
+---
+
 想要有主題性的方式記錄
 
 it can be a memory that we can review and share to other people

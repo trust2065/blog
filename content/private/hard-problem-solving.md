@@ -1,5 +1,6 @@
 ---
 title: "hard-problem-solving"
+date: 2025-03-20
 categories: ["private"]
 ---
 TT Achievement 我覺得很難

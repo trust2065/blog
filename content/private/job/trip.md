@@ -1,5 +1,6 @@
 ---
 title: "trip"
+date: 2025-06-09
 categories: ["private"]
 ---
 yo-chi 優格
