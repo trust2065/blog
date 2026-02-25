@@ -3,6 +3,10 @@ languageCode = 'zh-tw'
 title = '澳洲0-3歲育兒指南'
 theme = 'ananke'
 
+hasCJKLanguage = true
+
+summaryLength = 50
+
 [params]
   description = '分享澳洲育兒經驗和建議'
   favicon = ''
@@ -15,7 +19,6 @@ theme = 'ananke'
   gitlab = ''
   linkedin = ''
   mastodon = ''
-  summaryLength = 70  # 這會生成大約 200 個中文字符的摘要
 
 [menu]
   [[menu.main]]
