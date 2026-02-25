@@ -22,3 +22,6 @@ other = "最近{{.Title}}"
 [allTitle]
 other = "所有{{.Title}}"
 
+[more]
+other = "更多"
+
