@@ -1,5 +1,6 @@
 baseURL = 'https://trust2065.github.io/blog/'
 languageCode = 'zh-tw'
+defaultContentLanguage = 'zh-tw'
 title = '澳洲0-3歲育兒指南'
 theme = 'ananke'
 

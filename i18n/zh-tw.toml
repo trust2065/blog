@@ -1,0 +1,24 @@
+[Tags]
+other = "標籤"
+
+[tags]
+other = "標籤"
+
+[Categories]
+other = "分類"
+
+[categories]
+other = "分類"
+
+[Posts]
+other = "文章"
+
+[posts]
+other = "文章"
+
+[recentTitle]
+other = "最近{{.Title}}"
+
+[allTitle]
+other = "所有{{.Title}}"
+
