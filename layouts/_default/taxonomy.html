@@ -1,0 +1,23 @@
+{{ define "main" }}
+  <article class="cf pa3 pa4-m pa4-l">
+    <div class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links {{ $.Param "text_color" | default "mid-gray" }}">
+      <p>{{ i18n "taxonomyPageList" . }}</p>
+    </div>
+  </article>
+  <div class="mw8 center ph3">
+    <section class="mt4 mb5">
+      <ul class="list pl0 measure-wide-l center">
+        {{ range .Pages }}
+          <li class="mt3 pb3 bb b--light-gray">
+            <a href="{{ .RelPermalink }}" class="link black dim flex justify-between items-center">
+              <span class="f4">{{ .Title }}</span>
+              <time class="f6 gray" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">
+                {{ .Date.Format "2006-01-02" }}
+              </time>
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    </section>
+  </div>
+{{ end }}
