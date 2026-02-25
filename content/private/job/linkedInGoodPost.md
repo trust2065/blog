@@ -1,3 +1,7 @@
+---
+title: "linkedInGoodPost"
+categories: ["private"]
+---
 👋 Hey everyone!
 
 I’m currently looking for new opportunities as a Senior Frontend Engineer (Remote preferred) — ideally working with React, TypeScript, and JavaScript. I’ve been focused on building clean, scalable UIs, improving developer workflows, and contributing to modern stack transitions (like Redux → Zustand + React Query). I care a lot about performance, clean code, and creating great user experiences.

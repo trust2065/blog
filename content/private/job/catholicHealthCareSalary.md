@@ -1,3 +1,7 @@
+---
+title: "catholicHealthCareSalary"
+categories: ["private"]
+---
 create a record system that records
 working time, from and to
 break time, type 1, 15 minutes that is no pay and type 2 that has payment

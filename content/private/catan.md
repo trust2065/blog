@@ -1,3 +1,7 @@
+---
+title: "Catan 筆記"
+categories: ["private"]
+---
 ![alt text](image.png)
 
 玩了一場完全沒磚頭 只有小木頭的
